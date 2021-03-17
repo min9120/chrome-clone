@@ -70,3 +70,8 @@ cursor: pointer;
   
   animation: faidIn 0.5s linear;
 }
+
+
+.block{
+  display: none;
+}

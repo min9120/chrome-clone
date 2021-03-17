@@ -25,7 +25,36 @@
     <ur class="js-finList">
       
     </ur>
-  
+    <div class = 'js-random'>
+    <h1>Random Number Game</h1>
+    <h2></h2>
+    <form class= "js-sliderContainer">
+      <input class = "sliderInput"type="range"min ="0" max ="160" list = "tickmarks">
+    
+<datalist id="tickmarks">
+  <option value="0"></option>
+  <option value="20"></option>
+  <option value="40"></option>
+  <option value="60"></option>
+  <option value="80"></option>
+  <option value="100"></option>
+  <option value="120"></option>
+  <option value="140"></option>
+  <option value="160"></option>
+</datalist>
+    
+    </input>
+      <p>Guess the number : </p>
+      <input class = "guessInput" type ="number"/>
+      <button>play</button>
+    </form>
+    <div class="result block">
+      <p></p>
+      <h3></h3>
+    </div>
+    
+  </div>  
+  <h4 class = "js-gretting gretting"></h4>
     <!-- <h1>where are you from?</h1>
     <select class = "js-select">
       <option value="NONE">----choose your country</option>
@@ -38,6 +67,6 @@
     <script src = "src/todo.js"></script>
     <!-- <script src = "src/background.js"></script> -->
     <script src = "src/clock.js"></script>
-  
+    <script src = "src/randomNum.js"></script>
   </body>
 </html>
