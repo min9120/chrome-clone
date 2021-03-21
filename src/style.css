@@ -1,8 +1,7 @@
 body {
-  background-repeat: none;
-  background-color: antiquewhite;
+  font-family: "Lora", serif;
 }
-li{
+li {
   margin-bottom: 4px;
 }
 .form,
@@ -12,46 +11,48 @@ li{
 .showing {
   display: block;
 }
-.list-title{
-  margin:16px;
+.list-title {
+  margin: 16px;
 }
-.js-todoForm button{
-  padding:8px 12px;
-  border:none;
-  background-color: salmon;
+.js-todoForm button {
+  font-family: "Lora", serif;
+  padding: 8px 12px;
+  border: none;
+  background-color: rgba(250, 128, 114, 0.74);
   border-radius: 4px;
- 
 }
-.js-todoForm button:hover{
-cursor: pointer;
-  border:none;
-  background-color:rgb(168, 91, 65);
-  
+.js-todoForm button:hover {
+  cursor: pointer;
+  border: none;
+  background-color: rgb(168, 91, 65);
 }
-.js-todoForm input{
-  width: 500px;
+.js-todoForm input {
+  background-color: rgba(0, 0, 0, 0.3);
+  color: white;
+  width: fit-content;
   height: 24px;
   border-radius: 4px;
-  border:none;
-  margin:24px 16px;
-  padding:2px 12px;
-  
+  border: none;
+  margin: 24px 16px;
+  padding: 2px 12px;
+}
+.js-todoForm input::placeholder {
+  color: #ffffffd8;
+  font-size: 16px;
 }
 
-
-.js-todoForm input :focus{
+.js-todoForm input :focus {
   border: solid pink 2px;
-  
 }
-.listBt{
-  margin:0 0 0 4px;
-  border:none;
-  background-color:lightsalmon;
+.listBt {
+  margin: 0 0 0 4px;
+  border: none;
+  background-color: lightsalmon;
   border-radius: 4px;
 }
-.listBt:hover{
+.listBt:hover {
   cursor: pointer;
-  background-color:salmon;
+  background-color: salmon;
 }
 @keyframes fadeIn {
   from {
@@ -61,17 +62,94 @@ cursor: pointer;
     opacity: 1;
   }
 }
-.backgrounImg {
+.backgroundImg {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  
+  z-index: -1;
   animation: faidIn 0.5s linear;
 }
 
-
-.block{
+.block {
   display: none;
+}
+.ic-place {
+  width: 32px;
+  height: 32px;
+  object-fit: contain;
+  margin-top: 2px;
+  opacity: 0.56;
+}
+.topContents {
+  display: flex;
+  margin-top: 8%;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  color: #ffffff;
+}
+.js-clock {
+  display: inline-grid;
+  grid-template-rows: 2;
+  mix-blend-mode: difference;
+
+  color: rgb(255, 255, 255);
+  font-size: 200px;
+  font-weight: 500;
+}
+.hour {
+  margin: 0;
+}
+.min {
+  margin: -124px 0 0 90px;
+}
+
+.js-form input {
+  border: none;
+  border-bottom: solid rgba(250, 128, 114, 0.753) 4px;
+  background: none;
+  width: 100%;
+  height: 24px;
+  padding: 0 0 3px 0;
+  margin: 8px auto 16px auto;
+  display: inline-block;
+  outline: none;
+  font-size: 24px;
+  color: #ffffff;
+  font-family: "Lora", serif;
+}
+.js-form input::placeholder {
+  font-family: "Lora", serif;
+  mix-blend-mode: difference;
+  color: rgb(255, 255, 255);
+}
+.js-place {
+  display: inline-flex;
+  padding: 8px 10px 8px 8px;
+  background-color: rgba(0, 0, 0, 0.3);
+  border-radius: 12px;
+  height: 36px;
+}
+.js-place span {
+  font-size: 24px;
+  height: 36px;
+  margin: 3px 0 0 12px;
+}
+.js-gretting {
+  margin: 0 auto 16px auto;
+  text-align: center;
+  font-size: 50px;
+  mix-blend-mode: difference;
+  color: rgb(255, 255, 255);
+}
+.todoContent {
+  display: grid;
+  width: 80%;
+  grid-template-columns: 1fr 1fr;
+}
+.todoContent h3 {
+  text-align: center;
 }

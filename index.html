@@ -1,72 +1,79 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>hello this is chrome clone coding project</title>
+    <title>chrome clone coding project</title>
     <meta charset="UTF-8"/>
     <link rel = "styleSheet" href="src/style.css"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Lora:wght@500&display=swap" rel="stylesheet">
   </head>
   <body>
-   
-    <form class= "js-form form">
-      <input type="text" placeholder="what is your name?"/>
-    </form>
-    <h4 class = "js-gretting gretting"></h4>
+    <div class = 'topContents'>
+      <div class = 'js-clock'>
+        <p class="hour"></p>
+        <p class="min"></p>
+      </div>
+      <form class= "js-form form">
+        <input type="text" placeholder="what is your name?"/>
+      </form>
+      <h2 class = "js-gretting gretting"></h2>
+      <div class = 'js-place'></div>
 
-    <h1>TO DO LIST</h1>
-    <form class ="js-todoForm">
-      <input type="text" placeholder=" write to do"/>
-      <button >submit</button>
-    </form>
-    <h3 class = "list-title">Pending</h3>
-    <ur class="js-todoList">
-      
-    </ur>
-    <h3  class = "list-title">Finished</h3>
-    <ur class="js-finList">
-      
-    </ur>
-    <div class = 'js-random'>
-    <h1>Random Number Game</h1>
-    <h2></h2>
-    <form class= "js-sliderContainer">
-      <input class = "sliderInput"type="range"min ="0" max ="160" list = "tickmarks">
-    
-<datalist id="tickmarks">
-  <option value="0"></option>
-  <option value="20"></option>
-  <option value="40"></option>
-  <option value="60"></option>
-  <option value="80"></option>
-  <option value="100"></option>
-  <option value="120"></option>
-  <option value="140"></option>
-  <option value="160"></option>
-</datalist>
-    
-    </input>
-      <p>Guess the number : </p>
-      <input class = "guessInput" type ="number"/>
-      <button>play</button>
-    </form>
-    <div class="result block">
-      <p></p>
-      <h3></h3>
+      <form class ="js-todoForm">
+        <input type="text" placeholder=" write to do"/>
+        <button >submit</button>
+      </form>
+      <div class="todoContent">
+        <div>
+          <h3 class = "list-title">Pending</h3>
+          <ul class="js-todoList"></ul>
+        </div>
+        <div>
+          <h3  class = "list-title">Finished</h3>
+          <ul class="js-finList"></ul>    
+        </div>
     </div>
-    
-  </div>  
-  <h4 class = "js-gretting gretting"></h4>
-    <!-- <h1>where are you from?</h1>
-    <select class = "js-select">
-      <option value="NONE">----choose your country</option>
-      <option value="KR">Korea</option>
-      <option value="GR">Greece</option>
-      <option value="TR">Turkey</option>
-      <option value="FI">Finland</option>
-    </select> -->
-    <script src = "src/gretting.js"></script>
-    <script src = "src/todo.js"></script>
-    <!-- <script src = "src/background.js"></script> -->
-    <script src = "src/clock.js"></script>
-    <script src = "src/randomNum.js"></script>
-  </body>
+    </div>
+  
+
+  
+  
+  <script src = "src/gretting.js"></script>
+  <script src = "src/todo.js"></script>
+  <script src = "src/background.js"></script>
+  <script src = "src/clock.js"></script>
+  <script src="src/weather.js"></script>
+</body>
 </html>
+
+
+
+<!-- <script src = "src/randomNum.js"></script> -->
+<!-- <div class = 'js-random'>
+  <h1>Random Number Game</h1>
+<h2></h2>
+<form class= "js-sliderContainer">
+  <input class = "sliderInput"type="range"min ="0" max ="160" list = "tickmarks">
+
+<datalist id="tickmarks">
+<option value="0"></option>
+<option value="20"></option>
+<option value="40"></option>
+<option value="60"></option>
+<option value="80"></option>
+<option value="100"></option>
+<option value="120"></option>
+<option value="140"></option>
+<option value="160"></option>
+</datalist>
+
+</input>
+  <p>Guess the number : </p>
+  <input class = "guessInput" type ="number"/>
+  <button>play</button>
+</form>
+<div class="result block">
+  <p></p>
+  <h3></h3>
+</div>
+ -->

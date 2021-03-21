@@ -129,7 +129,7 @@ function loadTodos() {
     parseTodoData.forEach(function (todo) {
       if (todo.type === "pending") {
         paintTodo(todo.text);
-      } else {
+      } else if (todo.type === "finished") {
         paintFin(todo);
       }
     });

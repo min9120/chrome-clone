@@ -4,16 +4,26 @@ const form = document.querySelector(".js-form"),
 
 const USER_LS = "currentUser";
 
+function printText() {
+  const day = new Date();
+  const H = day.getHours();
+  if (5 < H && H < 12) {
+    return "Good Morning";
+  } else if (H >= 12 && H < 18) {
+    return "Good Afternoon";
+  } else return "Good Night";
+}
 function paintGretting(text) {
+  const grettingText = printText();
   form.classList.remove("showing");
   gretting.classList.add("showing");
-  gretting.innerText = `Hello ${text}`;
+  gretting.innerText = `${grettingText} ${text}`;
 }
-function saveName(text){
+function saveName(text) {
   localStorage.setItem(USER_LS, text);
 }
 function submitHandler(event) {
-  event.preventDefault(); 
+  event.preventDefault();
   //defalut event를 막는 1단계
   const currentValue = input.value;
   console.log(currentValue);
@@ -22,7 +32,6 @@ function submitHandler(event) {
 }
 
 function askForName() {
-
   form.classList.add("showing");
   form.addEventListener("submit", submitHandler);
 }
