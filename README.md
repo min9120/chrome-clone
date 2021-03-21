@@ -1,4 +1,4 @@
-# chrome-clone
+# chrome-clone with VanillaJS
 
 feature
 - clock
