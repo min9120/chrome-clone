@@ -8,5 +8,6 @@ feature
 - weather with geolocation! 
 
 
-click this URL! 👇🏼🏼🏼🏼🏼
+click this URL! 👇
+
 https://min9120.github.io/chrome-clone/
