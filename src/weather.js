@@ -19,7 +19,7 @@ function drawPlace(place, temperature) {
 
 function getWeather(lat, lng) {
   fetch(
-    `http://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lng}&appid=${API_KEY}&units=metric`
+    `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lng}&appid=${API_KEY}&units=metric`
   )
     .then(function (response) {
       return response.json();
