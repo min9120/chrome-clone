@@ -31,12 +31,12 @@ function rollBackHandler(event) {
   const btn = event.target;
   const li = btn.parentNode;
 
-  finList.removeChild(li);
   todoData.forEach(function (todo) {
     if (todo.id == parseInt(li.id)) {
       todo.type = PENDING;
       paintTodo(todo.text);
     }
+    finList.removeChild(li);
   });
 
   saveLocalData();
