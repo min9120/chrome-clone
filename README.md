@@ -10,4 +10,4 @@ feature
 
 click this URL! 👇
 
-https://min9120.github.io/chrome-clone/
+https://min9120.github.io/vanillaJS/
